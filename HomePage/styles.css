@@ -11,6 +11,9 @@ p, h1, a{
 body{
     background-color: lightgray;
 }
+.mobile img{
+    display:none;
+}
 /* CABEÇALHO - INÍCIO*/
 header{
     background-color: lightgray;
@@ -200,6 +203,76 @@ footer a[href^="mailto:"] {
 }
 
 /* RODAPÉ - FIM */
+
+/* MEDIA QUERIES - INÍCIO */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    header{
+    background-color: red;
+}
+.serie5, .serie10
+{
+    display:none;
+}
+section img
+{
+    width: 75%;
+}
+main h2{
+    padding-top:15px;
+}
+}
+
+@media screen and (max-width:767px) {
+    header{
+        background-color: blue;}
+    header .infos img.logo{
+        display:none;
+    }
+    .menu{
+        display:none;
+    }
+    .mobile{
+        padding-top:15px;
+        display:flex;
+    }
+    .mobile img{
+        display:block;
+        max-width: 100%;
+        width:20%;
+        padding-left: 10%;
+    }
+    .browser{
+        grid-column: 1/3;
+    }
+    .browser img:first-of-type{
+        max-width: 100%;
+        width:4%;
+    }
+    .browser img:nth-of-type(2)
+    {
+        max-width: 100%;
+        width:8%;
+        background-color: lightgray;
+    }
+    section{
+        display:none;
+    }
+    main{
+        clear: both;
+        width:100%;
+    }
+    .serie5, .serie10
+    {
+        display:none;
+    }
+    footer{
+        font-size: 90%;
+    }
+    .contato a{
+        padding: 5px;
+    }
+}
+/* MEDIA QUERIES - FIM */
 
 
 
