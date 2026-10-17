@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Prático 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <header>
+        <div class="mobile">
+            <img src="images/logo.png" alt="Logo">
+            <h1 >BINGEBOX</h1>
+        </div>
+        <div class="infos">
+            <img class="logo" src="images/logo.png" alt="Logo">
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="">Perfil</a>
+                <a href="">Séries</a>
+                <a href="">Ajuda</a>
+            </nav>
+            <div class="browser">
+                <img src="images/lupa.png" alt="Lupa">
+                <input type="search" placeholder="Buscar séries">
+                <img src="images/menu-icon.png" alt="Lupa">
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2><b>Que bom te ter de volta, usuario1!</b></h2>
+        <h3><b>Sugestões para você</b></h3>
+        <div id="carouselDestaque" class="carousel slide">
+            <div class="carousel-inner" id="sugestoes"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaque" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaque" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h3><b>Séries</b></h3>
+        <div id="carouselSeries" class="carousel slide">
+            <div class="carousel-inner" id="series"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSeries" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSeries" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h3><b>Resenhas recentes</b></h3>
+        <div class="d-flex recentes">
+            <div class="serie6">
+                <img src="images/supernatural.jpg" alt="Supernatural">
+                <img src="images/3stars.png" alt="Nota">
+                <p>Supernatural</p>
+            </div>
+            <div class="serie7">
+                <img src="images/theboys.jpg" alt="The Boys">
+                <img src="images/4stars.png" alt="Nota">
+                <p>The Boys</p>
+            </div>
+            <div class="serie8">
+                <img src="images/thegoodplace.jpg" alt="The good place">
+                <img src="images/5stars.png" alt="Nota">
+                <p>The Good Place</p>
+            </div>
+            <div class="serie9">
+                <img src="images/thepitt.jpg" alt="The Pitt">
+                <img src="images/5stars.png" alt="Nota">
+                <p>The Pitt</p>
+            </div>
+            <div class="serie10">
+                <img src="images/wandinha.jpg" alt="Wandinha">
+                <img src="images/1star.png" alt="Nota">
+                <p>Wandinha</p>
+            </div>
+        </div>
+    </main>
+    <section>
+        <img src="images/usuario1.png" alt="Foto de perfil">
+        <h3>usuario1</h3>
+        <h2>Série favorita</h2>
+        <img src="images/brooklyn99.jpg" alt="Brooklyn 99">
+        <h1>Brooklyn 99</h1>
+    </section>
+    <footer>
+        <p>Criado por Luana Dantas - PUC Minas 2026</p>
+        <div class="contato">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=luana.vsdantas@gmail.com" target="_blank">Email</a>
+            <a href="https://www.linkedin.com/in/luanavdantas">Linkedin</a>
+            <a href="https://www.github.com/luanavdantas">Github</a>
+        </div>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
