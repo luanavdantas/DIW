@@ -1,0 +1,134 @@
+:root {
+  --fundo: #1b1830;
+  --superficie: #262243;
+  --borda: #3a3563;
+  --texto: #f1eefc;
+  --texto-suave: #b4aed4;
+  --destaque: #f5b94a;
+  --destaque-texto: #2a1d00;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: "DM Sans";
+  line-height: 1.5;
+}
+
+.topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem clamp(1rem, 4vw, 3rem);
+  border-bottom: 1px solid var(--borda);
+}
+
+h1 {
+  margin: 0;
+  font-family: "Bricolage Grotesque";
+  font-weight: 800;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  letter-spacing: -0.02em;
+}
+
+.busca {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1 1 280px;
+  max-width: 460px;
+}
+
+#search {
+  flex: 1;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  background: var(--superficie);
+  color: var(--texto);
+  font: inherit;
+}
+
+#search::placeholder { color: var(--texto-suave); }
+
+#btnSearch {
+  padding: 0.65rem 1.2rem;
+  border: 0;
+  border-radius: 8px;
+  background: var(--destaque);
+  color: var(--destaque-texto);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#btnSearch:hover { filter: brightness(1.08); }
+
+#search:focus-visible,
+#btnSearch:focus-visible {
+  outline: 2px solid var(--destaque);
+  outline-offset: 2px;
+}
+
+main { padding: 1.5rem clamp(1rem, 4vw, 3rem) 3rem; }
+
+#message {
+  min-height: 1.5rem;
+  margin: 0 0 1rem;
+  color: var(--texto-suave);
+}
+
+#movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.sem-poster {
+  display: grid;
+  place-items: center;
+  background: var(--borda);
+  color: var(--texto-suave);
+}
+
+.card-info { padding: 0.9rem; }
+
+.card-title {
+  margin: 0 0 0.25rem;
+  font-family: "Bricolage Grotesque";
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.card-meta {
+  margin: 0 0 0.5rem;
+  color: var(--destaque);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.card-overview {
+  margin: 0;
+  color: var(--texto-suave);
+  font-size: 0.88rem;
+}
